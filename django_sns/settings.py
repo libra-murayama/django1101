@@ -23,13 +23,10 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'ca*&cn6+w1e*)j57b560=e+9y9e)cw5)#o1llk64&t3)46kke3'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True#Falseに変える
-
 ALLOWED_HOSTS=[os.environ.get("ALLOWED_HOSTS")]
 DEBUG=False
 
-STATIC_ROOT="/usr/share/nginx/html/static"
-MEDIA_ROOT="/usr/share/nginx/html/media"
+
 
 
 # Application definition
@@ -123,3 +120,6 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 STATIC_URL = '/static/'
+
+STATIC_ROOT="/usr/share/nginx/html/static"
+MEDIA_ROOT="/usr/share/nginx/html/media"
